@@ -1,0 +1,223 @@
+
+@media (min-width: 320px){
+    .secciondeproductos .titulogeneral{
+        margin-top: 10px;
+        width: 100% !important;
+    }
+    .ofertones{
+        background-image: blue;
+        background-size: contain;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        font-size: 1rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        text-align: center;
+        color: red;
+        font-size: 1rem;
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 20rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        margin: 0 !important;
+        display: flex;
+        border-top: 4px solid red;
+    
+        border-bottom: 4px solid red;
+    }
+    .imagenoticia{
+        width: 50%;
+    }
+    .imagenoticia img{
+        width: 100%;
+    }
+    .textonoticia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 0.8rem;
+        width: 50%;
+    
+    }}
+@media (min-width: 768px){
+    .secciondeproductos .titulogeneral{
+        margin-top: 10px;
+    }
+    .ofertones{
+        background-color: blue;
+        background-size: contain;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        font-size: 2rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        text-align: center;
+        color: red;
+        font-size: 2rem;
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 30rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        margin: 0 !important;
+        display: flex;
+        border-top: 4px solid red;
+    
+        border-bottom: 4px solid red;
+    }
+    .imagenoticia{
+        width: 50%;
+    }
+    .imagenoticia img{
+        width: 100%;
+    }
+    .textonoticia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 1.0rem !important;
+        width: 50%;
+    
+    }}
+@media (min-width: 1024px){
+    .ofertones{
+        background-color: blue;
+        background-size: contain;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .productodeoferta1{
+        width: 50%;
+    }
+    .textito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .ofertones img{
+        
+        align-self: center;
+        width: 100%;
+    }
+    .ofertones h3{
+        font-size: 3rem;
+        color: red;
+        text-align: center;
+    
+    
+    }
+    .ofertones h2{
+        text-align: center;
+        color: red;
+        font-size: 3rem;
+    
+    }
+    
+    .youtube iframe{
+        width: 100%;
+        height: 20rem;
+        margin: 0 !important;
+    }
+    .promo img{
+        width: 100%;
+    }
+    .noticia{
+        margin: 0 !important;
+        display: flex;
+        border-top: 4px solid red;
+    
+        border-bottom: 4px solid red;
+    }
+    .imagenoticia{
+        width: 50%;
+    }
+    .imagenoticia img{
+        width: 100%;
+    }
+    .textonoticia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue';
+        text-align: center;
+        font-size: 5rem;
+        width: 50%;
+    
+    }}
+
+
+
+
+
+
+
+

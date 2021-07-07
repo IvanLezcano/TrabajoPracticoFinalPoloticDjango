@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="shortcut icon" href="../img/587282f1f3a71010b5e8ef14.png">
+
+
+        <title>La Torre Marvel</title>
+        
+
+
+</head>
+
+
+<main>
+
+        <form class="contacto" action="https://formspree.io/f/xzbyvkza"
+        method="POST">
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="email" placeholder="lavidanegra@gmail.com" required >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Nombre completo</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="Nombre" placeholder="NoSoyBatman Nirobin" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Apellido</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="Apellido" placeholder="Rodriguez" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Numero de telefono (opcional)</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="email" placeholder="123...456?">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Pais (opcional)</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="pais" placeholder="Wakanda">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label" >Genero</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3"name="email" placeholder="Expresanos como te identificas">
+              </div>
+            </div>
+            <div class="form-group ">
+              <label  for="inputPassword3" class="col-sm-2 col-form-label">Dejanos tu mensaje</label>
+              <div class="col-sm-10">
+                <textarea  rows="12" col="1" type="text" class="form-control jaja textarea2"name="mensaje" id="inputPasswor"> </textarea>
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Enviarlo a la torre stark</button>
+              </div>
+            </div>
+          </form>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

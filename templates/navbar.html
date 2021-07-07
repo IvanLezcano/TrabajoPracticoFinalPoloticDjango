@@ -1,0 +1,52 @@
+{% url 'index' as index %}
+{% url 'about' as about %}
+{% url 'quiz' as quiz %}
+{% url 'novedades' as novedades %}
+
+
+{% url 'contacto' as contacto %}
+
+{% url 'products:new' as new %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=" color: rgb(255, 255, 255) !important; display: flex !important; align-items: center !important;">
+  <div class="container-fluid" >
+    <div  class="collapse navbar-collapse" id="navbarSupportedContent"  >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == index %}active{% endif %}" href="{{ index }}">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style=" background-color: rgb(255, 0, 0);">
+            <li><a class="dropdown-item" href="{% url 'products:search' %}?q=Juguetes"> Juguetes <img src="/static/images/9f116eed218bb7facb5749c0b3b356c1a3ecf94f.jpg" alt="" style="margin-left:10px; width: 40px; height: 40px; border-radius: 2px;"></a></li>
+            <li><a class="dropdown-item" href="{% url 'products:search' %}?q=Comics"> Comics <img src="/static/images/comic-marvel-portada.jpg" alt="" style=" margin-left:20px; width: 40px; height: 40px; border-radius: 2px;"></a></li>
+            <li><a class="dropdown-item" href="{% url 'products:search' %}?q=Ropa"> Ropa <img src="/static/images/3e887aefc43dd617660bf814170a6da9.jpg" alt="" style=" margin-left:35px; width: 40px; height: 40px; border-radius: 2px;"></a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == about %}active{% endif %}" href="{{ about }}">Sobre nosotros.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ quiz }}">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ novedades }}">Novedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{contacto}}">Contacto</a>
+        </li>
+        {% if user.is_superuser %}
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == new %}active{% endif %}" href="{{ new }}">Nuevo Producto</a>
+        </li>
+        {% endif %}                        
+      </ul>
+      <form class="d-flex" action="{% url 'products:search' %}">
+        <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search" name="q" value="{{ query }}">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>

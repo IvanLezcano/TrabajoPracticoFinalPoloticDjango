@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+            <div class="col">
+                <h2>{{ title }}</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="mb-3">
+                            {{ field.label_tag }}
+                            {{ field }}
+                            {% if field.errors %}
+                                {{ field.errors }}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    <input type="checkbox" class="mb-4" onclick="showPassword()"> Ver contraseña
+                    <br>
+                    <button type="submit" class="btn btn-primary">Registrate</button>
+                </form>
+            </div>
+{% endblock %}
